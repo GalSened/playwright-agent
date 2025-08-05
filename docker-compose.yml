@@ -1,0 +1,14 @@
+version: "3.9"
+services:
+  playwright-agent:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    container_name: playwright_agent
+    network_mode: "host"     # חובה כדי להשתמש ב-VPN שלך
+    volumes:
+      - ./tests:/app/tests
+    environment:
+      - DISPLAY=${DISPLAY}
+    stdin_open: true
+    tty: true
