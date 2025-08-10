@@ -1,14 +1,17 @@
-version: "3.9"
+version: "3"
+
 services:
   playwright-agent:
+    container_name: playwright_agent
     build:
       context: .
       dockerfile: docker/Dockerfile
-    container_name: playwright_agent
-    network_mode: "host"     # חובה כדי להשתמש ב-VPN שלך
+    network_mode: "host"
     volumes:
-      - ./tests:/app/tests
+      - ./tests:/app/tests          # Persist generated tests
     environment:
-      - DISPLAY=${DISPLAY}
+      - LLM_URL=http://192.168.20.31:1234/v1/chat/completions
+      - HEADFUL=0                   # Flip to 1 for visible browser
     stdin_open: true
     tty: true
+  

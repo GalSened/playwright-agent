@@ -1,0 +1,49 @@
+{
+  "management": {
+    "filePath": "C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\CloudArchiveBackEnd\\CloudArchiveManagement\\bin\\Release\\net9.0\\publish\\appsettings.json",
+    "configuration": [
+       {
+        "key": "GeneralSettings.ConnectionString",
+        "value": "Password=Aa123456;Persist Security Info=True;User ID=sa;Initial Catalog=ArchiveNew;TrustServerCertificate=True;Data Source=DEVTEST\\SQLEXPRESS"
+      },
+      {
+
+        "key": "GeneralSettings.UserFrontendApplicationRoute",
+        "value": "https://devtest.comda.co.il:447"
+      },
+      {
+        "key": "GeneralSettings.ManagementFrontendApplicationRoute",
+        "value": "https://devtest.comda.co.il:446"
+      },
+       {
+        "key": "MongoDbSettings.ConnectionString",
+        "value": "mongodb://192.168.0.151:27017"
+      }
+    ]
+  },
+  "user": {
+    "filePath": "C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\CloudArchiveBackEnd\\CloudArchiveUser\\bin\\Release\\net9.0\\publish\\appsettings.json",
+    "configuration": [
+       {
+        "key": "GeneralSettings.ConnectionString",
+        "value": "Password=Aa123456;Persist Security Info=True;User ID=sa;Initial Catalog=ArchiveNew;TrustServerCertificate=True;Data Source=DEVTEST\\SQLEXPRESS"
+      },
+      {
+        "key": "GeneralSettings.UserFrontendApplicationRoute",
+        "value": "https://devtest.comda.co.il:447"
+      },
+      {
+        "key": "MongoDbSettings.ConnectionString",
+        "value": "mongodb://192.168.0.151:27017"
+      },
+      {
+        "key": "IpRateLimitingSettings.GeneralRules.0.Limit",
+        "value": 10000000
+      },
+	  {
+        "key": "IpRateLimitingSettings.GeneralRules.1.Limit",
+        "value": 100000000
+      }
+    ]
+  }
+}

@@ -1,0 +1,42 @@
+# Python cache and compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+.env/
+.env.*  
+*.env
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE/project settings
+.vscode/
+.idea/
+
+# Logs
+*.log
+logs/
+
+# Test output & generated files
+tests/generated/
+sandbox/
+
+# Docker-related
+*.pid
+docker/*.log
+
+# Temporary and backup files
+*.tmp
+*.bak
+*.swp
+*~
+
+# HTML/JSON files that are generated dynamically
+dom_analysis.json
+dom.html
+screenshot.png

@@ -1,0 +1,408 @@
+{
+  "management": {
+    "filePath": "C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\Wesign3-Backend\\WeSignManagement\\bin\\Release\\net9.0\\publish\\appsettings.json",
+    "configuration": [
+      {
+        "key": "GeneralSettings.ConnectionString",
+        "value": "Password=Aa123456;Persist Security Info=True;User ID=sa;Initial Catalog=WeSign;TrustServerCertificate=True;Data Source=DEVTEST\\SQLEXPRESS"
+      },
+       {
+        "key": "GeneralSettings.AuthorizeHangfire",
+        "value": true
+      },
+      {
+        "key": "GeneralSettings.SignerFronendApplicationRoute",
+        "value": "https://devtest.comda.co.il:443/signer"
+      },
+      {
+        "key": "GeneralSettings.UserFronendApplicationRoute",
+        "value": "https://devtest.comda.co.il:443"
+      },
+      {
+        "key": "GeneralSettings.UserBackendEndPoint",
+        "value": "https://devtest.comda.co.il:443/userapi/v3"
+      },
+      {
+        "key": "GeneralSettings.HistoryIntegratorApiUrl",
+        "value": "https://devtest.comda.co.il/HistoryApi/v3"
+      },
+      {
+        "key": "GeneralSettings.ProductId",
+        "value": "5ef4811c579d2526943db008"
+      },
+	  {
+        "key": "GeneralSettings.LicenseDMZEndpoint",
+        "value": ""
+      },
+       {
+        "key": "GeneralSettings.CA",
+        "value": ""
+      },
+      {
+        "key": "SignerOneExtraInfo.CertPath",
+        "value": ""
+      },
+       {
+        "key": "SignerOneExtraInfo.Headers",
+		"value" : []
+      },
+      {
+        "key": "SignerOneExtraInfo.Key1",
+        "value": ""
+      },
+       {
+        "key": "SignerOneExtraInfo.PersistentKey2",
+        "value": ""
+      },
+      {
+        "key": "JwtSettings.JwtBearerSignatureKey",
+        "value": "fdc25682-b56a-4945-9430-93886fae59c2"
+      },
+      {
+        "key": "JwtSettings.JwtSignerSignatureKey",
+        "value": "34b368fa-cd9a-4c26-aa63-26b7641b6242"
+      },
+      {
+        "key": "JwtSettings.SessionExpireMinuteTime",
+        "value": "100000"
+      },
+       {
+        "key": "JwtSettings.SignerLinkExpirationInHours",
+        "value": 1440
+      },
+      {
+        "key": "IpRateLimiting.GeneralRules.0.Limit",
+        "value": 100000
+      },
+      {
+        "key": "FolderSettings.Documents",
+        "value": "C:\\Comda\\Wesign\\Data\\Documents"
+      },
+      {
+        "key": "FolderSettings.PeriodicReports",
+        "value": "C:\\Comda\\Wesign\\Data\\PeriodicReports"
+      },
+      {
+        "key": "FolderSettings.Templates",
+        "value": "C:\\Comda\\Wesign\\Data\\Templates"
+      },
+      {
+        "key": "FolderSettings.EmailTemplates",
+        "value": "C:\\Comda\\Wesign\\Data\\EmailTemplates"
+      },
+      {
+        "key": "FolderSettings.CompaniesLogo",
+        "value": "C:\\Comda\\Wesign\\Data\\CompaniesLogo"
+      },
+      {
+        "key": "FolderSettings.ContactSeals",
+        "value": "C:\\Comda\\Wesign\\Data\\ContactSeals"
+      },
+      {
+        "key": "FolderSettings.Certificates",
+        "value": "C:\\Comda\\Wesign\\Data\\Certificates"
+      },
+      {
+        "key": "FolderSettings.ContactCertificates",
+        "value": "C:\\Comda\\Wesign\\Data\\Certificates\\Contacts"
+      },
+      {
+        "key": "FolderSettings.UserCertificates",
+        "value": "C:\\Comda\\Wesign\\Data\\Certificates\\Users"
+      },
+      {
+        "key": "FolderSettings.License",
+        "value": "C:\\Comda\\Wesign\\Data\\License"
+      },
+      {
+        "key": "FolderSettings.Appendices",
+        "value": "C:\\Comda\\Wesign\\Data\\Appendices"
+      },
+      {
+        "key": "FolderSettings.Attachments",
+        "value": "C:\\Comda\\Wesign\\Data\\Attachments"
+      },
+      {
+        "key": "FolderSettings.CompanyProgramResport",
+        "value": "C:\\Sites\\WeSign\\Data\\CompanyProgramResport"
+      },
+      {
+        "key": "Serilog.WriteTo.0.Args.path",
+        "value": "C:\\Comda\\Wesign\\Data\\Logs\\Management\\WeSignManagement-.log"
+      },
+      {
+        "key": "Serilog.WriteTo.1.Args.ConnectionString",
+        "value": "Password=Aa123456;Persist Security Info=True;User ID=sa;Initial Catalog=WeSign;TrustServerCertificate=True;Data Source=DEVTEST\\SQLEXPRESS"
+      }
+
+    ]
+  },
+  "signer": {
+    "filePath": "C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\Wesign3-Backend\\WeSignSigner\\bin\\Release\\net9.0\\publish\\appsettings.json",
+    "configuration": [
+      {
+        "key": "GeneralSettings.ConnectionString",
+        "value": "Password=Aa123456;Persist Security Info=True;User ID=sa;Initial Catalog=WeSign;TrustServerCertificate=True;Data Source=DEVTEST\\SQLEXPRESS"
+      },
+      {
+        "key": "GeneralSettings.SignerFronendApplicationRoute",
+        "value": "https://devtest.comda.co.il:443/signer"
+      },
+	  {
+        "key": "GeneralSettings.UserFronendApplicationRoute",
+        "value": "https://devtest.comda.co.il:443"
+      },
+      {
+        "key": "GeneralSettings.AuthSignerFronendApplicationRoute",
+        "value": "https://devtest.comda.co.il:443/auth/signer"
+      },
+      {
+        "key": "GeneralSettings.ComsignIDPURL",
+        "value": "https://csc.comsigntrust.com/RemoteSignatureService"
+      },
+      {
+        "key": "GeneralSettings.ComsignIDPActive",
+        "value": false
+      },
+      {
+        "key": "GeneralSettings.ComsignIDPClientSecret",
+        "value": "86cb29c5577c4852b87d77f2c8ec17a6"
+      },
+       {
+        "key": "GeneralSettings.ComsignIDPClientId",
+        "value": "74324621afca4189a4aca9e657be3878"
+      },
+      {
+        "key": "RabbitMQSettings.UseRabbitSync",
+        "value": false
+      },
+      {
+        "key": "SignerOneExtraInfo.CertPath",
+        "value": ""
+      },
+       {
+        "key": "SignerOneExtraInfo.Headers",
+		"value" : []
+      },
+      {
+        "key": "SignerOneExtraInfo.Key1",
+        "value": ""
+      },
+       {
+        "key": "SignerOneExtraInfo.PersistentKey2",
+        "value": ""
+      },
+      {
+        "key": "GeneralSettings.SmartCardDesktopClientInstallerPath",
+        "value": "C:\\comda\\Wesign\\Sites\\SmartCardDesktopClient\\SmartCardDesktopClientSetup.exe"
+      },
+      {
+        "key": "GeneralSettings.AgentHubEndpoint",
+        "value": "https://devtest.comda.co.il:443/signerapi/v3/agentsocket"
+      },
+      {
+        "key": "GeneralSettings.ProductId",
+        "value": "5ef4811c579d2526943db008"
+      },
+      {
+        "key": "JwtSettings.JwtBearerSignatureKey",
+        "value": "fdc25682-b56a-4945-9430-93886fae59c2"
+      },
+      {
+        "key": "JwtSettings.JwtSignerSignatureKey",
+        "value": "34b368fa-cd9a-4c26-aa63-26b7641b6242"
+      },
+      {
+        "key": "JwtSettings.SessionExpireMinuteTime",
+        "value": 100000
+      },
+      {
+        "key": "IpRateLimiting.GeneralRules.0.Limit",
+        "value": 100000
+      },
+      {
+        "key": "FolderSettings.Documents",
+        "value": "C:\\Comda\\Wesign\\Data\\Documents"
+      },
+      {
+        "key": "FolderSettings.Templates",
+        "value": "C:\\Comda\\Wesign\\Data\\Templates"
+      },
+      {
+        "key": "FolderSettings.EmailTemplates",
+        "value": "C:\\Comda\\Wesign\\Data\\EmailTemplates"
+      },
+      {
+        "key": "FolderSettings.CompaniesLogo",
+        "value": "C:\\Comda\\Wesign\\Data\\CompaniesLogo"
+      },
+      {
+        "key": "FolderSettings.ContactSeals",
+        "value": "C:\\Comda\\Wesign\\Data\\ContactSeals"
+      },
+      {
+        "key": "FolderSettings.ContactSignatureImages",
+        "value": "C:\\Comda\\Wesign\\Data\\ContactSignatureImages"
+      },
+      {
+        "key": "FolderSettings.Certificates",
+        "value": "C:\\Comda\\Wesign\\Data\\Certificates"
+      },
+      {
+        "key": "FolderSettings.ContactCertificates",
+        "value": "C:\\Comda\\Wesign\\Data\\Certificates\\Contacts"
+      },
+      {
+        "key": "FolderSettings.UserCertificates",
+        "value": "C:\\Comda\\Wesign\\Data\\Certificates\\Users"
+      },
+      {
+        "key": "FolderSettings.Appendices",
+        "value": "C:\\Comda\\Wesign\\Data\\Appendices"
+      },
+      {
+        "key": "FolderSettings.Attachments",
+        "value": "C:\\Comda\\Wesign\\Data\\Attachments"
+      },
+      {
+        "key": "Serilog.WriteTo.0.Args.path",
+        "value": "C:\\Comda\\Wesign\\Data\\Logs\\Signer\\WeSignSigner-.log"
+      },
+      {
+        "key": "Serilog.WriteTo.1.Args.ConnectionString",
+        "value": "Password=Aa123456;Persist Security Info=True;User ID=sa;Initial Catalog=WeSign;TrustServerCertificate=True;Data Source=DEVTEST\\SQLEXPRESS"
+      }
+
+    ]
+  },
+  "user": {
+    "filePath": "C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\Wesign3-Backend\\WeSign\\bin\\Release\\net9.0\\publish\\appsettings.json",
+    "configuration": [
+      {
+        "key": "GeneralSettings.ConnectionString",
+        "value": "Password=Aa123456;Persist Security Info=True;User ID=sa;Initial Catalog=WeSign;TrustServerCertificate=True;Data Source=DEVTEST\\SQLEXPRESS"
+      },
+      {
+        "key": "GeneralSettings.SignerFronendApplicationRoute",
+        "value": "https://devtest.comda.co.il:443/signer"
+      },
+      {
+        "key": "GeneralSettings.NotifySmsApiEndpoint",
+        "value": "http://devtest.comda.co.il:8099/notifyapiService.svc"
+      },
+       {
+        "key": "GeneralSettings.PayCallSmsApiEndpoint",
+        "value": "http://api.multisend.co.il/v2/sendjson"
+      },
+      {
+        "key": "GeneralSettings.ComsignIDPActive",
+        "value": false
+      },
+      {
+        "key": "SignerOneExtraInfo.CertPath",
+        "value": ""
+      },
+      {
+        "key": "SignerOneExtraInfo.Headers",
+		"value" : []
+      },
+       {
+        "key": "FolderSettings.PeriodicReports",
+        "value": "C:\\Comda\\Wesign\\Data\\PeriodicReports"
+      },
+      {
+        "key": "SignerOneExtraInfo.Key1",
+        "value": ""
+      },
+       {
+        "key": "SignerOneExtraInfo.PersistentKey2",
+        "value": ""
+      },
+      {
+        "key": "GeneralSettings.AuthSignerFronendApplicationRoute",
+        "value": "https://devtest.comda.co.il:443/auth/signer"
+      },
+      {
+        "key": "GeneralSettings.UserFronendApplicationRoute",
+        "value": "https://devtest.comda.co.il:443"
+      },
+      {
+        "key": "GeneralSettings.SmartCardDesktopClientInstallerPath",
+        "value": "C:\\comda\\Wesign\\Sites\\SmartCardDesktopClient\\SmartCardDesktopClientSetup.exe"
+      },
+      {
+        "key": "GeneralSettings.AgentHubEndpoint",
+        "value": "https://devtest.comda.co.il:443/signerapi/v3/agentsocket"
+      },
+      {
+        "key": "GeneralSettings.ManagementAPIUrl",
+        "value": "https://devtest.comda.co.il:10443/managementapi"
+      },
+      {
+        "key": "GeneralSettings.GoldmanSmsApiEndpoint",
+        "value": "http://smsapi.co.il/Web_API/SendSMS.asmx"
+      },
+       {
+        "key": "GeneralSettings.SNSPlusPlusSMSApiEndpoint",
+        "value": "http://smsapi.co.il/Web_API/SendSMS.asmx"
+      },
+      {
+        "key": "GeneralSettings.LibreOfficePath",
+        "value": "C:\\Program Files\\LibreOffice\\program\\soffice.exe"
+      },
+      {
+        "key": "GeneralSettings.ProductId",
+        "value": "5ef4811c579d2526943db008"
+      },
+      {
+        "key": "JwtSettings.JwtBearerSignatureKey",
+        "value": "fdc25682-b56a-4945-9430-93886fae59c2"
+      },
+      {
+        "key": "JwtSettings.JwtSignerSignatureKey",
+        "value": "34b368fa-cd9a-4c26-aa63-26b7641b6242"
+      },
+      {
+        "key": "FolderSettings.Certificates",
+        "value": "C:\\Comda\\Wesign\\Data\\Certificates"
+      },
+      {
+        "key": "FolderSettings.ContactCertificates",
+        "value": "C:\\Comda\\Wesign\\Data\\Certificates\\Contacts"
+      },
+      {
+        "key": "FolderSettings.UserCertificates",
+        "value": "C:\\Comda\\Wesign\\Data\\Certificates\\Users"
+      },
+      {
+        "key": "Serilog.WriteTo.0.Args.path",
+        "value": "C:\\Comda\\Wesign\\Data\\Logs\\User\\WeSignUser-.log"
+      },
+	  {
+        "key": "IpRateLimiting.GeneralRules.11.Limit",
+        "value": 123456
+      },
+	   {
+        "key": "IpRateLimiting.GeneralRules.13.Limit",
+        "value": 123456
+      },
+      {
+        "key": "Serilog.WriteTo.1.Args.ConnectionString",
+        "value": "Password=Aa123456;Persist Security Info=True;User ID=sa;Initial Catalog=WeSign;TrustServerCertificate=True;Data Source=DEVTEST\\SQLEXPRESS"
+      }
+    ]
+  },
+  "auth": {
+    "filePath": "C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\Wesign3-Backend\\WSE-ADAuth\\bin\\Release\\net9.0\\publish\\appsettings.json",
+    "configuration": [
+      {
+        "key": "JwtSettings.JwtBearerSignatureKey",
+        "value": "fdc25682-b56a-4945-9430-93886fae59c2"
+      },
+      {
+        "key": "JwtSettings.JwtSignerSignatureKey",
+        "value": "34b368fa-cd9a-4c26-aa63-26b7641b6242"
+      }
+    ]
+  }
+}

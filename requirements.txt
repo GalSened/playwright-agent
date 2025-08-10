@@ -1,0 +1,8 @@
+# --- requirements.txt ---
+beautifulsoup4        # DOM parsing
+requests              # API / LLM calls
+loguru                # logging helper
+jinja2                # templating (optional)
+fastapi
+tiktoken              # future API layer (optional)
+# (Playwright is installed directly in Dockerfile)
