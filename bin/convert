@@ -1,0 +1,40 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+IN="${1:-selenium_tests/login}"
+OUT="${2:-tests/generated/login}"
+
+# טען .env למשתני סביבה מקומיים (לגרסת compose שלך אין --env-file ב-run)
+if [[ -f .env ]]; then
+  set -a
+  source .env
+  set +a
+fi
+
+: "${OPENAI_API_KEY:?Missing OPENAI_API_KEY (set in .env or env)}"
+
+echo "== Build image =="
+docker compose build --no-cache playwright-agent
+
+echo "== Convert ($IN -> $OUT) =="
+docker compose run --rm \
+  -e OPENAI_API_KEY \
+  -e OPENAI_MAX_COMPLETION_TOKENS="${OPENAI_MAX_COMPLETION_TOKENS:-2048}" \
+  -e OPENAI_MODEL_ANALYZER="gpt-5-mini" \
+  -e OPENAI_MODEL_ENFORCER="gpt-5-mini" \
+  -e OPENAI_MODEL_BUILDER="gpt-5" \
+  playwright-agent bash -lc "
+set -euo pipefail
+rm -rf '${OUT:?}'/*
+python tools/convert_selenium_once.py --in '${IN}' --out '${OUT}'
+echo '--- FILES ---'
+find '${OUT}' -maxdepth 3 -type f -name '*.py' -print | sort
+echo '--- VALIDATION ---'
+BAD=\$(find '${OUT}' -type f -name '*.py' | grep -E -v '/(pages|tests)/|/conftest\.py$' || true)
+if [[ -n \"\$BAD\" ]]; then
+  echo '❌ Disallowed files:'
+  echo \"\$BAD\"
+  exit 1
+fi
+echo '✅ Output paths OK (pages/, tests/, conftest only)'
+"
